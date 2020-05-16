@@ -1,0 +1,44 @@
+.btn {
+  text-decoration: none;
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 1.3rem 3.8rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  &--hero {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 1rem;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+      transition: all 0.4s;
+    }
+    &:hover::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.2rem 0.7rem rgba($color-black, 0.3);
+  }
+}

@@ -1,0 +1,63 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+  color: $color-primary;
+  font-weight: bold;
+}
+
+.heading-primary {
+  color: $color-white;
+
+  &--main {
+    display: block;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+
+    animation: moveInLeft 1s ease-out;
+  }
+  &--sub {
+    display: block;
+    font-family: "Satisfy", cursive;
+    font-size: 8rem;
+    font-weight: lighter;
+    margin-bottom: 5rem;
+
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary
+  );
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+  color: transparent;
+
+  &:hover {
+    transform: skewY(2deg) skewX(5deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  display: inline;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: $color-gray;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $color-gray;
+  line-height: 1.7;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
