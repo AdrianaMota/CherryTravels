@@ -28,7 +28,6 @@ body {
 }
 
 .heading-secondary {
-  display: inline;
   background-image: linear-gradient(
     to right,
     $color-primary-light,
@@ -45,14 +44,13 @@ body {
 }
 
 .heading-tertiary {
-  display: inline;
   font-size: 2.7rem;
   font-weight: 400;
   color: $color-gray;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: $default-font;
   font-weight: 300;
   color: $color-gray;
   line-height: 1.7;

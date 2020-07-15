@@ -1,0 +1,31 @@
+.feature-box {
+  width: 70%;
+  background-color: $color-background;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  padding: 2.8rem;
+  text-align: center;
+
+  transition: transform 0.3s;
+
+  &__icon {
+    color: $color-primary;
+    font-size: 6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  &__title {
+    font-family: "Satisfy", cursive;
+    color: $color-primary;
+  }
+
+  &__text {
+    color: $color-gray;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.1);
+  }
+}
