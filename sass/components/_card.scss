@@ -1,9 +1,152 @@
 .card {
-  background-color: greenyellow;
+  perspective: 200rem;
+  -moz-perspective: 200rem;
+  position: relative;
   height: 50rem;
-  transition: all 0.5s;
 
-  &:hover {
-    transform: rotateY(180deg);
+  @include clearfix;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, $alpha: 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-brown-light,
+          $color-brown
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    &--1 {
+      background-image: url(/assets/Plan-1.png);
+    }
+    &--2 {
+      background-image: url(/assets/Plan-2.png);
+    }
+    &--3 {
+      background-image: url(/assets/Plan-3.png);
+    }
+  }
+  &__heading {
+    font-size: 3rem;
+    color: $color-white;
+    padding: 0 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: fit-content;
+    margin-top: -3.6rem;
+
+    &--1 {
+      background-color: $color-brown;
+    }
+    &--2 {
+      background-color: $color-green;
+    }
+    &--3 {
+      background-color: $color-blue;
+    }
+  }
+  &__details {
+    padding: 1rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        color: $color-gray;
+        font-weight: 400;
+        font-size: 1.6rem;
+        padding: 1.2rem;
+      }
+    }
+    &--highlight-1 {
+      color: $color-brown;
+    }
+    &--highlight-2 {
+      color: $color-green;
+    }
+    &--highlight-3 {
+      color: $color-blue;
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price {
+    color: $color-white;
+    text-align: center;
+
+    &--only {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &--value {
+      font-size: 6rem;
+      font-weight: 600;
+    }
+  }
+
+  &__btn {
+    background-color: $color-white;
+    &--1 {
+      color: $color-brown;
+    }
+    &--2 {
+      color: $color-green;
+    }
+    &--3 {
+      color: $color-blue;
+    }
   }
 }

@@ -5,13 +5,12 @@
   padding: 1.3rem 3.8rem;
   font-weight: 400;
   font-size: $default-font;
-  text-transform: uppercase;
   border-radius: 1rem;
   display: inline-block;
   transition: all 0.3s ease-in-out;
   position: relative;
 
-  &--hero {
+  &--main {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
 
