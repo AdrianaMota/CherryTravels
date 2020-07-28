@@ -19,7 +19,7 @@
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
-      border-bottom: 3px solid $color-green;
+      border-bottom: 3px solid $color-secondary;
 
       &:invalid {
         border-bottom: 3px solid $color-primary;
@@ -62,7 +62,7 @@
   &__radio-button {
     height: 2rem;
     width: 2rem;
-    background-color: rgba($color-green-light, $alpha: 0.7);
+    background-color: rgba($color-secondary-light, $alpha: 0.9);
     //border: 4px solid $color-primary;
     border-radius: 50%;
     display: inline-block;
@@ -80,7 +80,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background-color: $color-green;
+      background-color: $color-secondary;
       opacity: 0;
       transition: all 0.2s;
     }
