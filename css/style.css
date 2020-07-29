@@ -135,13 +135,13 @@ body {
   margin-bottom: 8rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-bottom-big {
-      margin-bottom: 5rem !important; } }
+      margin-bottom: 4rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
-      margin-bottom: 2.5rem !important; } }
+      margin-bottom: 2rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
