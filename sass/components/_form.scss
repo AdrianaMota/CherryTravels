@@ -2,6 +2,11 @@
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
+  @include respond(phone) {
+    &__text {
+      margin-left: -2rem;
+    }
+  }
 
   &__input {
     font-size: 1.5rem;
@@ -15,6 +20,9 @@
     width: 90%;
     display: block;
     transition: all 0.3s;
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -48,6 +56,10 @@
   &__radio-group {
     width: 40%;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__radio-label {

@@ -5,19 +5,27 @@
   font-size: 1.3rem;
   padding: 2.8rem;
   text-align: center;
-
+  display: inline-block;
   transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 
   &__icon {
     color: $color-primary;
     font-size: 6rem;
     margin-bottom: 0.6rem;
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     font-family: "Satisfy", cursive;
     color: $color-primary;
-    text-transform: lowercase;
+    text-transform: none;
+    text-align: center;
   }
 
   &__text {

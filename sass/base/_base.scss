@@ -15,14 +15,17 @@ html {
     font-size: 50%; //1rem = 8px; 8px/16px = 50%
   }
   @include respond(phone) {
-    font-size: 30%;
+    font-size: 43.75%; //1rem = 7px, 7px/16px
   }
   @include respond(big-desk) {
-    font-size: 75%; //1rem = 12, 12/16 = 75%
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
   }
 }
 body {
   box-sizing: border-box;
   background-color: $color-background;
   padding: 0;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
