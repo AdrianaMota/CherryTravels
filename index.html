@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -54,7 +54,7 @@
           >
           <span class="heading-primary--sub">Let us take you there</span>
         </h1>
-        <a href="#" class="btn btn--main">Get Started</a>
+        <a href="#popup" class="btn btn--main">Get Started</a>
       </div>
     </header>
 
@@ -78,7 +78,7 @@
                 quisquam, assumenda facere ipsum minus.
               </p>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Live your dreams like you wanted to
+                Live your dreams like you wanted
               </h3>
               <p class="paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
@@ -113,7 +113,7 @@
       </section>
 
       <section class="section-features">
-        <div class="row">
+        <div class="row features">
           <div class="col-1-of-3">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
@@ -164,7 +164,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -197,7 +197,9 @@
                     <p class="card__price--only">Only</p>
                     <p class="card__price--value">$249</p>
                   </div>
-                  <a href="#" class="btn card__btn card__btn--1">Book now!</a>
+                  <a href="#popup" class="btn card__btn card__btn--1"
+                    >Book now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -231,7 +233,9 @@
                     <p class="card__price--only">Only</p>
                     <p class="card__price--value">$349</p>
                   </div>
-                  <a href="#" class="btn card__btn card__btn--2">Book now!</a>
+                  <a href="#popup" class="btn card__btn card__btn--2"
+                    >Book now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -265,7 +269,9 @@
                     <p class="card__price--only">Only</p>
                     <p class="card__price--value">$399</p>
                   </div>
-                  <a href="#" class="btn card__btn card__btn--3">Book now!</a>
+                  <a href="#popup" class="btn card__btn card__btn--3"
+                    >Book now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -519,8 +525,41 @@
       </div>
     </footer>
 
-    <div class="popup">
-      <div class="popup-content">POPUP</div>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="assets/vacation1.jpg"
+            alt="Gilr in the beach"
+            class="popup__img"
+          />
+          <img
+            src="assets/vacation2.jpg"
+            alt="Couple in a boat"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now!
+          </h2>
+          <h3 class="heading-tertiary popup__sub u-margin-bottom-small">
+            Because you deserve this vacation
+          </h3>
+          <p class="popup__text paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            pellentesque id lectus nec vestibulum. Phasellus consequat suscipit
+            pellentesque. In hac habitasse platea dictumst. Donec sit amet
+            consequat eros, eget imperdiet dui. Phasellus vulputate auctor lorem
+            id feugiat. Phasellus elementum, turpis ut efficitur vulputate, nisl
+            tellus interdum dui, vel maximus augue nibh vitae purus. Donec
+            fermentum neque nec leo iaculis tempor. Quisque et porta felis, at
+            iaculis nibh. Sed eu risus purus.
+          </p>
+          <a href="#" class="btn btn--main">Book now</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

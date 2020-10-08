@@ -21,11 +21,8 @@
     height: 6rem;
   }
   &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include absCenter;
     text-align: center;
     width: 100%;
-    transform: translate(-50%, -50%);
   }
 }

@@ -117,10 +117,7 @@
   }
 
   &__cta {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
   }
 
   &__price {
@@ -150,7 +147,7 @@
     }
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     border-radius: 1rem;
     height: auto;
     background-color: white;

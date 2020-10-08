@@ -1,5 +1,8 @@
+.features {
+  margin: 0 auto;
+}
 .feature-box {
-  width: 70%;
+  width: 73%;
   background-color: $color-background;
   border-radius: 1rem;
   font-size: 1.3rem;
@@ -7,8 +10,7 @@
   text-align: center;
   display: inline-block;
   transition: transform 0.3s;
-
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 2rem;
   }
 
