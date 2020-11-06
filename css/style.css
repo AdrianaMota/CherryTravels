@@ -338,13 +338,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
 .card__picture--1 {
-  background-image: url(/assets/Plan-1.png);
+  background-image: url(/assets/Plan-1.jpg);
 }
 .card__picture--2 {
-  background-image: url(/assets/Plan-2.png);
+  background-image: url(/assets/Plan-2.jpg);
 }
 .card__picture--3 {
-  background-image: url(/assets/Plan-3.png);
+  background-image: url(/assets/Plan-3.jpg);
 }
 .card__heading {
   font-size: 3rem;
