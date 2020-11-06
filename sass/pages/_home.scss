@@ -17,7 +17,7 @@
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url(../assets/Features.png);
+    url(../assets/Features.jpg);
   background-size: cover;
   -webkit-clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
   clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
@@ -59,7 +59,7 @@
       rgba($color-white, 0.8) 50%,
       transparent 50%
     ),
-    url(../assets/booking.png);
+    url(../assets/booking.jpg);
   background-size: cover;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.15);
@@ -71,7 +71,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(../assets/booking.png);
+      url(../assets/booking.jpg);
   }
   @include respond(tab-port) {
     background-image: linear-gradient(
@@ -79,7 +79,7 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../assets/booking.png);
+      url(../assets/booking.jpg);
   }
 
   &__form {
